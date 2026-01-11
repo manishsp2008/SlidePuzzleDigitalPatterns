@@ -1,0 +1,13 @@
+// Slide puzzle - Digital Pattern Generator
+# Visual images
+https://m.media-amazon.com/images/I/71846FtMcxL._SL1500_.jpg
+https://m.media-amazon.com/images/I/71FEgEyB7CL._SL1500_.jpg
+https://m.media-amazon.com/images/I/71vsnIBR91L._SL1500_.jpg
+
+# What is the game?
+- A slide puzzle board with movable colourful tiles/dots that children slide around.
+- Comes with challenge cards showing different patterns or colour arrangements toddlers are encouraged to replicate on the board.
+- The board has 4 colors tiles/dots (Red, Yellow, Green, Blue).
+
+# Goal:
+- We want to create a digital version of the patterns for the above game. Currently the puzzle provides fixed set of 15 options that can be used by children as puzzle but I want to have a digital version that can generate infinite combination by choosing difficulty levels. 
