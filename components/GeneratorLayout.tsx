@@ -34,7 +34,10 @@ const GeneratorLayout: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center py-10 px-4 md:p-8">
+    <div 
+      className="min-h-screen flex flex-col items-center justify-center py-10 px-4 md:p-8"
+      style={{ backgroundColor: '#f8fafc' }}
+    >
       <div className="w-full max-w-md flex flex-col items-center gap-4 md:gap-8">
         
         {/* Header */}

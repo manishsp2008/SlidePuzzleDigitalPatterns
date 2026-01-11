@@ -14,17 +14,20 @@ const colorMap: Record<Color, string> = {
 
 const PatternCard: React.FC<PatternCardProps> = ({ pattern }) => {
   return (
-    <div className="bg-white p-4 md:p-8 rounded-2xl shadow-xl max-w-xs md:max-w-md w-full mx-auto border-4 border-gray-100 flex flex-col items-center relative overflow-hidden transition-all duration-300">
+    <div 
+      className="p-4 md:p-8 rounded-2xl shadow-xl max-w-xs md:max-w-md w-full mx-auto border-4 flex flex-col items-center relative overflow-hidden transition-all duration-300"
+      style={{ backgroundColor: '#ffffff', borderColor: '#f1f5f9' }}
+    >
       
       {/* 4x4 Grid Container */}
       <div className="grid grid-cols-4 gap-3 md:gap-5 relative z-10 mt-4 md:mt-8 mb-4 md:mb-8">
         
         {/* Vertical Track Lines - Perfectly aligned behind each column */}
         <div className="absolute inset-0 -z-10 grid grid-cols-4 gap-3 md:gap-5 pointer-events-none">
-          <div className="flex justify-center h-full"><div className="w-1 md:w-1.5 h-full bg-slate-50 border-x border-slate-100" /></div>
-          <div className="flex justify-center h-full"><div className="w-1 md:w-1.5 h-full bg-slate-50 border-x border-slate-100" /></div>
-          <div className="flex justify-center h-full"><div className="w-1 md:w-1.5 h-full bg-slate-50 border-x border-slate-100" /></div>
-          <div className="flex justify-center h-full"><div className="w-1 md:w-1.5 h-full bg-slate-50 border-x border-slate-100" /></div>
+          <div className="flex justify-center h-full"><div className="w-1 md:w-1.5 h-full border-x" style={{ backgroundColor: '#f8fafc', borderColor: '#f1f5f9' }} /></div>
+          <div className="flex justify-center h-full"><div className="w-1 md:w-1.5 h-full border-x" style={{ backgroundColor: '#f8fafc', borderColor: '#f1f5f9' }} /></div>
+          <div className="flex justify-center h-full"><div className="w-1 md:w-1.5 h-full border-x" style={{ backgroundColor: '#f8fafc', borderColor: '#f1f5f9' }} /></div>
+          <div className="flex justify-center h-full"><div className="w-1 md:w-1.5 h-full border-x" style={{ backgroundColor: '#f8fafc', borderColor: '#f1f5f9' }} /></div>
         </div>
 
         {pattern.map((color, index) => (

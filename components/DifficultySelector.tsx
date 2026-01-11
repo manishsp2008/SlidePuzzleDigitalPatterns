@@ -10,17 +10,24 @@ const DifficultySelector: React.FC<DifficultySelectorProps> = ({ currentDifficul
   const options: Difficulty[] = ['easy', 'medium', 'hard'];
 
   return (
-    <div className="flex bg-gray-200 p-1 rounded-xl w-full max-w-sm mx-auto mb-6">
+    <div 
+      className="flex p-1 rounded-xl w-full max-w-sm mx-auto mb-6"
+      style={{ backgroundColor: '#e2e8f0' }}
+    >
       {options.map((option) => (
         <button
           key={option}
           onClick={() => onSelect(option)}
           aria-pressed={currentDifficulty === option}
+          style={{ 
+            backgroundColor: currentDifficulty === option ? '#ffffff' : 'transparent',
+            color: currentDifficulty === option ? '#1e293b' : '#64748b'
+          }}
           className={`
             flex-1 py-2 text-sm font-bold uppercase tracking-wide rounded-lg transition-all
             ${currentDifficulty === option 
-              ? 'bg-white text-gray-800 shadow-md transform scale-100' 
-              : 'text-gray-500 hover:text-gray-700 hover:bg-gray-200/50'
+              ? 'shadow-md transform scale-100' 
+              : 'hover:text-gray-700 hover:bg-white/20'
             }
             cursor-pointer
           `}
